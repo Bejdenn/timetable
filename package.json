@@ -6,6 +6,12 @@
   "files": [
     "dist"
   ],
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
     "prepack": "vite build",
     "dev": "vite",
